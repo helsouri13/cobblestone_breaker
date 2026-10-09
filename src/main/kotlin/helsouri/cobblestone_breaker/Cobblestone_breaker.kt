@@ -12,6 +12,8 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockBehaviour // Ensure this is imported
 import org.slf4j.LoggerFactory
+import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents
+import net.minecraft.world.item.CreativeModeTabs
 
 object Cobblestone_breaker : ModInitializer {
 	const val MOD_ID: String = "cobblestone_breaker"
@@ -46,6 +48,10 @@ object Cobblestone_breaker : ModInitializer {
 			ITEM_ID,
 			BlockItem(BREAKER_BLOCK, Item.Properties().setId(ITEM_KEY)) // <--- This fixes it for the item
 		)
+
+		CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register { entries ->
+			entries.accept(BREAKER_BLOCK)
+		}
 
 		LOGGER.info("Cobblestone Breaker loaded.")
 	}

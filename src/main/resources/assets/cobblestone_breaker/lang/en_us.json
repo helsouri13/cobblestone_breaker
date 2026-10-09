@@ -1,4 +1,5 @@
 {
   "block.cobblestone_breaker.cobblestone_breaker": "Cobblestone Breaker",
-  "item.cobblestone_breaker.cobblestone_breaker": "Cobblestone Breaker"
+  "item.cobblestone_breaker.cobblestone_breaker": "Cobblestone Breaker",
+  "lore.cobblestone_breaker.cobblestone_breaker": "Breaks adjacent cobblestone when powered."
 }
