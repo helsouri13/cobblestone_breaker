@@ -1,0 +1,51 @@
+{
+	"schemaVersion": 1,
+	"id": "cobblestone_breaker",
+	"version": "${version}",
+	"name": "cobblestone_breaker",
+	"description": "This is an simple block that auto breaks cobblestone",
+	"authors": [
+		"helsouri"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cobblestone_breaker/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "helsouri.cobblestone_breaker.Cobblestone_breaker",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "helsouri.cobblestone_breaker.client.Cobblestone_breakerClient",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "helsouri.cobblestone_breaker.client.Cobblestone_breakerDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"cobblestone_breaker.mixins.json",
+		{
+			"config": "cobblestone_breaker.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
