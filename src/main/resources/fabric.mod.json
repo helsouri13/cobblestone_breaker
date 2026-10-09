@@ -26,12 +26,6 @@
 				"value": "helsouri.cobblestone_breaker.client.Cobblestone_breakerClient",
 				"adapter": "kotlin"
 			}
-		],
-		"fabric-datagen": [
-			{
-				"value": "helsouri.cobblestone_breaker.client.Cobblestone_breakerDataGenerator",
-				"adapter": "kotlin"
-			}
 		]
 	},
 	"mixins": [

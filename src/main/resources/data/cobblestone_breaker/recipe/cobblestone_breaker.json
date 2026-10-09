@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "C#C",
+    "S#S",
     "IpI",
-    "C#C"
+    "S#S"
   ],
   "key": {
-    "C": "minecraft:cobblestone",
+    "S": "minecraft:stone",
     "#": "minecraft:redstone",
     "I": "minecraft:iron_ingot",
     "p": "minecraft:iron_pickaxe"
