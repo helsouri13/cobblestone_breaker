@@ -1,8 +1,9 @@
 # cobblestone_breaker
 
-## Setup
+This is a simple mod for a block that automatically breaks a cobblestone next to it if powered by redstone.
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+See the crafting recipe below:<br>
+![file.webp](file.webp)
 
 ## License
 
