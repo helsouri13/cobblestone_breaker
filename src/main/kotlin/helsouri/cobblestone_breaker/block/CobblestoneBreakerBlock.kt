@@ -25,7 +25,7 @@ class CobblestoneBreakerBlock(settings: Properties) : Block(settings) {
                 for (direction in Direction.entries) {
                     val target = pos.relative(direction)
                     if (level.getBlockState(target).`is`(Blocks.COBBLESTONE)) {
-                        level.destroyBlock(target, false)
+                        level.destroyBlock(target, true)
                     }
                 }
             }
