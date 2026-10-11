@@ -1,5 +1,5 @@
 # v 1.0.9
-- Rename mod id to be more user friendly
+- Rename mod name to be more user-friendly.
 
 # v 1.0.8
 - Fix small typo to allow block to drop resource
