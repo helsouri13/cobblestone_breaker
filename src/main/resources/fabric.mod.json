@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "Cobblestone_Breaker",
+	"id": "cobblestone_breaker",
 	"version": "${version}",
 	"name": "Cobblestone Beaker",
 	"description": "This is an simple block that auto breaks cobblestone",
